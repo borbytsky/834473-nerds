@@ -17,7 +17,7 @@
       	  <li><a href="#">Контакты</a></li>
       	</ul>
       	<ul class="user-navigation">
-      	  <li class="basket"><a href="#">Корзина</a></li>
+      	  <li class="basket"><a class="basket" href="#">Корзина</a></li>
       	</ul>	
       </nav>
       <div class="slider">
@@ -109,13 +109,13 @@
     </main>
     <footer class="main-footer">
       <div class="footer-contacts">
-        <img src="img/2.jpg" width="1440" height="416" alt="карта города Санкт-Петербург" class="map">
+        <img src="img/2.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" class="map">
         <p>
           <span>Nёrds Design Studio</span><br>
           191186, Санкт-Петербург,<br>
           ул. Б.Конюшенная, д. 19/8<br>
           Телефон: +7 (812) 275-75-75
-          <!-- Кнопка "напишите нам" -->
+          <button class="popup-open" type="button">Напишите нам</button>
         </p>  
       </div>
       <div class="footer-social">
@@ -133,8 +133,22 @@
     <section class="popup">
       <h2 class="visually-hidden">Форма связи с дизайн-студией</h2>
       <b>Напишите нам</b>
-      <!-- Место для формы -->
-      <span class="popup-close">x</span>	
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-item">
+          <label for="feedback-name">Ваше имя:</label>
+          <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-item">
+          <label for="feedback-email">Ваш e-mail:</label>
+          <input id="feedback-email" type="email" name="e-mail" value="" placeholder="email@example.com">
+        </p>
+        <p class="feedback-item">
+          <label for="feedback-letter">Текст письма:</label>
+          <textarea id="feedback-letter" name="letter" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>	
     </section> 
   </body>
 </html>
