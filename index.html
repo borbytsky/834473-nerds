@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -11,7 +14,7 @@
       	  <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип дизайн-студии «Nёrd's»" class="nerds-logo">
       	</a>
       	<ul class="site-navigation">
-      	  <li><a>Студия</a></li>
+      	  <li><a class="site-navigation-current">Студия</a></li>
       	  <li><a href="#">Клиенты</a></li>
       	  <li><a href="catalog.html">Магазин</a></li>
       	  <li><a href="#">Контакты</a></li>
@@ -62,7 +65,7 @@
       	  </li>	
       	</ul>
       </section>
-      <section>
+      <section class="about-studio">
       	<h2 class="visually-hidden">О студии</h2>
       	<div>
       	  <b> Мы маленькая, но гордая дизайн-студия из Краснодара</b>
@@ -79,13 +82,13 @@
       	<div>
       	  <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип дизайн-студии «Nёrd's»" class="nerds-illustration">
       	  <span>С 2004 года любим точность во всем:</span>
-      	  <dl>
+      	  <dl class="advantages">
             <dt>Уровень самоотдачи</dt>
-              <dd>146<span>%</span></dd>
+              <dd>146<sup>%</sup></dd>
             <dt>Соблюдение сроков</dt>
-              <dd>100<span>%</span></dd>
+              <dd>100<sup>%</sup></dd>
             <dt>Минимальная предоплата</dt>
-              <dd>50<span>%</span></dd>
+              <dd>50<sup>%</sup></dd>
       	  </dl>	
       	</div>
       </section>
@@ -110,16 +113,16 @@
     <footer class="main-footer">
       <div class="footer-contacts">
         <img src="img/2.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" class="map">
-        <p>
+        <p class="contacts">
           <span>Nёrds Design Studio</span><br>
           191186, Санкт-Петербург,<br>
-          ул. Б.Конюшенная, д. 19/8<br>
-          Телефон: +7 (812) 275-75-75
+          ул. Б.Конюшенная, д. 19/8<br><br>
+          тел.: +7 (812) 275-75-75
           <button class="popup-open" type="button">Напишите нам</button>
         </p>  
       </div>
       <div class="footer-social">
-        <ul>
+        <ul class="social-network">
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
@@ -136,7 +139,7 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
           <label for="feedback-name">Ваше имя:</label>
-          <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{1,}\s[A-Za-zА-Яа-яЁё]{1,}">
         </p>
         <p class="feedback-item">
           <label for="feedback-email">Ваш e-mail:</label>
@@ -146,7 +149,7 @@
           <label for="feedback-letter">Текст письма:</label>
           <textarea id="feedback-letter" name="letter" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button-submit" type="submit">Отправить</button>
       </form>
       <button class="popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>	
     </section> 

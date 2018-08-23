@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -13,7 +16,7 @@
       	<ul class="site-navigation">
       	  <li><a href="index.html">Студия</a></li>
       	  <li><a href="#">Клиенты</a></li>
-      	  <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+      	  <li class="site-navigation-current"><a>Магазин</a></li>
       	  <li><a href="#">Контакты</a></li>
       	</ul>
       	<ul class="user-navigation">
@@ -80,7 +83,7 @@
         <h2 class="visually-hidden">Сортировка готовых шаблонов по категориям</h2>
         <b>Сортировать:</b>
           <ul class="sorting-list">
-            <li class="sorting-item-current"><a href="#">по цене</a></li>
+            <li class="sorting-item sorting-item-current"><a href="#">по цене</a></li>
             <li class="sorting-item"><a href="#">по типу</a></li>
             <li class="sorting-item"><a href="#">по названию</a></li>
           </ul>
@@ -164,7 +167,7 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="paggination-item pagination-item-current"><a>1</a></li>
+          <li class="paggination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">следующая</a></li>
@@ -174,16 +177,16 @@
     <footer class="main-footer">
       <div class="footer-contacts">
         <img src="img/2.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" class="map">
-        <p>
+        <p class="contacts">
           <span>Nёrds Design Studio</span><br>
           191186, Санкт-Петербург,<br>
-          ул. Б.Конюшенная, д. 19/8<br>
+          ул. Б.Конюшенная, д. 19/8<br><br>
           Телефон: +7 (812) 275-75-75
-          <button  type="button" class="popup-open">Напишите нам</button>
+          <button  class="popup-open" type="button">Напишите нам</button>
         </p>  
       </div>
       <div class="footer-social">
-        <ul>
+        <ul class="social-network">
           <li><a class="social-button" href="#">Вконтакте</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
@@ -200,7 +203,7 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
           <label for="feedback-name">Ваше имя:</label>
-          <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{1,}\s[A-Za-zА-Яа-яЁё]{1,}">
         </p>
         <p class="feedback-item">
           <label for="feedback-email">Ваш e-mail:</label>
@@ -210,7 +213,7 @@
           <label for="feedback-letter">Текст письма:</label>
           <textarea id="feedback-letter" name="letter" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button-submit" type="submit">Отправить</button>
       </form>
       <button class="popup-close" type="button"><span class="visually-hidden">Закрыть</span></button>	
     </section> 
