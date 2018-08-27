@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 1440px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -17,6 +16,14 @@ a {
 .main-header {
   background-color: rgb(93.3,93.3,93.3, 0.1);
   padding-top: 49px;	
+}
+
+.header-container,
+.main-container,
+.footer-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-navigation {
@@ -39,12 +46,9 @@ a {
   display: flex;
   justify-content: space-between;
   width: 440px;
-  margin-left: 200px;
-  margin-right: 260px;
 }
 
 .user-navigation {
-  margin-right: 140px;
   width: 120px;
 }
 
@@ -75,7 +79,6 @@ a {
 .main-header-logo {
   width: 160px;
   height: 65px;
-  margin-left: 140px;
 }
 
 .main-header-logo:hover {
@@ -88,7 +91,6 @@ a {
 
 .slider-list {
   list-style: none;
-  margin-left: 140px;
   padding: 0;
 }
 
@@ -119,10 +121,6 @@ a {
 
 .slider-item:last-child .slogan {
   width: 460px;
-}
-
-.container {
-  margin-left: 140px;
 }
 
 .services-list {
@@ -257,13 +255,24 @@ a {
 }
 
 .contacts {
-  margin-left: 140px;
   width: 319px;
   padding-top: 54px;
   padding-left: 50px;
   padding-bottom: 47px;
   line-height: 18px;
   color: #666666;
+}
+
+.img-container {
+  overflow: hidden;
+  margin-left: -20px;
+  padding-right: -20px;
+}
+
+.img-container img {
+  display: inline-block;
+  margin-left: -120px;
+  margin-right: -120px;
 }
 
 .contacts span {
@@ -280,10 +289,9 @@ a {
 
 .social-network {
   display: flex;
-  margin-left: 140px;
-  margin-right: 140px;
   padding: 0;
   list-style: none;
+  margin-right: 140px;
 }
 
 .social-network a {
@@ -383,8 +391,7 @@ a {
 
 .popup {
   width: 960px;
-  margin-left: 240px;
-  margin-right: 240px;
+  margin: 0 auto;
   padding-left: 100px;
   padding-bottom: 84px;
   padding-top: 73px;
