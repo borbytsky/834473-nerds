@@ -21,7 +21,7 @@ a {
 .header-container,
 .main-container,
 .footer-container {
-  width: 1200px;
+  width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -190,13 +190,13 @@ a {
   margin-bottom: 47px;
 }
 
-.second-column span {
-  display: block;
-  width: 360px;
+.second-column .period {
   margin-top: 41px;
   margin-bottom: 49px;
-  padding-left: 17px;
-  padding-right: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .orders-list {
